@@ -1,0 +1,39 @@
+List of Fields for Default functions
+*Note: The user can change the functions within the R script and then change the variables in the vars.sh file to reflect fields for the new function.
+Additional information on rfishbase functions can be found here: https://cran.r-project.org/web/packages/rfishbase/rfishbase.pdf
+
+Estimate: A table of estimates from some models on trophic levels
+[1] "SpecCode"          "Species"           "MaxLengthTL"       "TLObserved"        "Troph"
+[6] "seTroph"           "TrophObserved"     "TrophPredicted"    "seTrophPredicted"  "a"
+[11] "sd_log10a"         "b"                 "sd_b"              "Method_ab"         "K"                
+[16] "SD_logK"           "Linf"              "SD_logLinf"        "LengthType"        "ComDepthMin"
+[21] "ComDepthMax"       "ComDepMinObserved" "ComDepMaxObserved" "DepthMin"          "DepthMax"
+[26] "DepthMinEstimate"  "DepthMaxEstimate"  "LastModified"      "MaxLengthSL"       "KObserved"
+
+Predators: a table of predators
+[1] "SpecCode"       "Species"        "autoctr"        "StockCode"      "PredatsRefNo"   "Locality"
+[7] "C_Code"         "Predatstage"    "PredatorI"      "PredatorII"     "PreyStage"      "PredatorGroup"
+[13] "DietP"          "StomachContent" "PredatorName"   "Predatcode"     "AlphaCode"      "MaxLength"
+[19] "MaxLengthType"  "PredatTroph"    "PredatseTroph"  "PredatRef"      "Remarks"        "Entered"
+[25] "DateEntered"    "Modified"       "DateModified"   "Expert"         "DateChecked"    "TS"
+
+Stocks: a table of species stocks data
+[1] "SpecCode"         "Species"          "StockCode"        "StockDefs"        "StockDefsGeneral" "Level"
+[7] "LocalUnique"      "IUCN_Code"        "IUCN_Assessment"  "Protected"        "StocksRefNo"      "CITES_Code"
+[13] "CITES_Date"       "CITES_Ref"        "CITES_Remarks"    "Northernmost"     "NorthSouthN"      "Southermost"
+[19] "NorthSouthS"      "Westernmost"      "WestEastW"        "Easternmost"      "WestEastE"        "BoundingRef"
+[25] "BoundingMethod"   "TempMin"          "TempMax"          "TempRef"          "EnvTemp"          "Resilience"
+[31] "ResilienceRemark" "pHMin"            "pHMax"            "pHRef"            "dHMin"            "dHMax"
+[37] "dHRef"            "GenBankID"        "RfeID"            "FIGIS_ID"         "EcotoxID"         "SCRFA_data"
+[43] "GMAD_ID"          "SAUP"             "SAUP_ID"          "SAUP_Group"       "AusMuseum"        "FishTrace"
+[49] "IUCN_ID"          "IUCN_Group"       "BOLD_ID"          "IGFAName"         "EssayID"          "ICESStockID"
+[55] "OsteoBaseID"      "DORIS_ID"         "Aquamaps"         "Morphology"       "Occurrence"       "Strains"
+[61] "Ecology"          "Diseases"         "Abnorm"           "Metabolism"       "Predators"        "Spawning"
+[67] "Fecundity"        "Speed"            "Diet"             "Eggs"             "EggDevelop"       "Food"
+[73] "Larvae"           "LarvDyn"          "LarvSpeed"        "PopDyn"           "LengthWeight"     "Gillarea"
+[79] "Maturity"         "MatSizes"         "Processing"       "Reproduction"     "Introductions"    "Abundance"
+[85] "Vision"           "Genetics"         "Aquaculture"      "CountryComp"      "Allele"           "GeneticStudies"
+[91] "Ration"           "Foods"            "Ecotoxicology"    "Brains"           "Catches"          "FAOAqua"
+[97] "LengthRelations"  "LengthFrequency"  "Sounds"           "Broodstock"       "EggNursery"       "FryNursery"
+[103] "LarvalNursery"    "Entered"          "DateEntered"      "Modified"         "DateModified"     "Expert"
+[109] "DateChecked"      "TS"
