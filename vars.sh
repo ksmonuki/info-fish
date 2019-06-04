@@ -1,6 +1,7 @@
 #variables file with default fields for each function
 #path to directory with R file (edited by user)
-DB=""
+DB="/Users/keiramonuki/Documents/C177/Project/"
+#
 #variable for estimate function
 EST="Species,MaxLengthTL,Troph,seTroph,TrophObserved"
 #

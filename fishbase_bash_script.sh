@@ -7,9 +7,9 @@ while getopts "w:a:h?:" opt; do
     case $opt in
         w) wkdir="$OPTARG" # path to output directory
         ;;
-        a) ana="$OPTARG"  # path to Anacapa output file
+        a) ana="$OPTARG"  # path to Anacapa output file (in .txt format)
         ;;
-        h) HELP="TRUE"  # calls help screen
+        h) HELP="TRUE"  # calls help screen explain the flag commands
         ;;
     esac
 done
@@ -17,7 +17,7 @@ done
 # if the user specifies the -h flag the help screen prints, if not an empty new line is returned
 if [ "${HELP}" = "TRUE" ]
 then
-  printf "\nThis is the help screen.\n\t-w is the first variable\n\t-a is the second variable\n\t-h prints help \n \n"
+  printf "\nThis is the help screen.\n\t-w is the first variable to set the working directory\n\t-a is the second variable of the path to the Anacapa file\n\t-h prints help \n \n"
   exit
 else
   echo ""
