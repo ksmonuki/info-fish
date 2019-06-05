@@ -1,0 +1,32 @@
+Species,MaxLengthTL,Troph,seTroph,TrophObserved,PredatorGroup,PredatorName,StockDefsGeneral,IUCN_Code,EnvTemp,Resilience,GenBankID,IUCN_ID
+Oplegnathus woodwardi,45,3.44,0.43,0,NA,NA,Eastern Indian Ocean,DD,temperate,Low,NA,154661
+Hypsypops rubicundus,36.6,3.16,0.39,0,NA,NA,Eastern Central Pacific,LC,subtropical,Low,161905,183367
+Sphyraena helleri,80,4.5,0.8,0,NA,NA,Indo-Pacific,N.E.,subtropical,Medium,NA,NA
+Oxyjulis californica,25,3.14,0.4,0,Otariidae,Zalophus californianus,Eastern Pacific,LC,subtropical,Medium,NA,187709
+Engraulis mordax,30.26,3.1,0.28,0,Petromyzontidae,Lampetra ayresii,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Engraulidae,Engraulis mordax,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Carcharhinidae,Prionace glauca,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Cetacea,unidentified,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Merlucciidae,Merluccius productus,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Otariidae,Zalophus californianus,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Paralichthyidae,Paralichthys californicus,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Phocidae,Phoca vitulina,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Salmonidae,Oncorhynchus clarki clarki,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Scombridae,Sarda chiliensis chiliensis,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Sebastidae,Sebastes entomelas,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Sebastidae,Sebastes melanops,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Selachimorpha,unidentified shark,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Triakidae,Triakis semifasciata,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,unidentified,unidentified,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Xiphiidae,Xiphias gladius,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Scombridae,Thunnus alalunga,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Scombridae,Thunnus thynnus thynnus,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Salmonidae,Oncorhynchus kisutch,NA,LC,subtropical,Medium,NA,183856
+Engraulis mordax,30.26,3.1,0.28,0,Salmonidae,Oncorhynchus tshawytscha,NA,LC,subtropical,Medium,NA,183856
+Girella simplicidens,46,2.82,0.26,0,NA,NA,Eastern Central Pacific,LC,subtropical,Medium,NA,154741
+Semicossyphus pulcher,91,3.56,0.43,0,Otariidae,Zalophus californianus,Eastern Pacific,VU,subtropical,Low,NA,61340
+Rhacochilus vacca,53.92,3.38,0.53,0,NA,NA,Eastern Pacific,LC,subtropical,Medium,50905,155179
+Citharichthys stigmaeus,17,3.4,0.52,0,Triakidae,Triakis semifasciata,Eastern Pacific,N.E.,subtropical,High,NA,NA
+Citharichthys stigmaeus,17,3.4,0.52,0,unidentified,unidentified,Eastern Pacific,N.E.,subtropical,High,NA,NA
+Medialuna californiensis,48,2.67,0.22,0,Otariidae,Zalophus californianus,Eastern Pacific,LC,temperate,Medium,NA,183618
+Chromis punctipinnis,30.5,2.73,0.31,0,Otariidae,Zalophus californianus,Eastern Pacific,LC,subtropical,Medium,NA,154831
