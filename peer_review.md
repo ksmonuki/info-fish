@@ -10,7 +10,7 @@ The motivation is to make it easier to assign trait information to an eDNA file 
 #### 3. Is there a program workflow and is it easy to understand?  What -in your own words- is the program workflow?
 Yes, theres a workflow but maybe it could be a bit more detailed (like explain how it does things? and what an ASV is)
 It takes the input file, extracts the unique species, searches them through fishbase (by matching the ASVs to the ASVs in fishbase?), and then makes an output table.
-- the Project Outline later on has things in more detail! maybe move this bit to your workflow section?
+- the Project Outline section includes all these things in more detail. maybe move this bit to your workflow section?
 
 #### 4. Are the dependencies indicated in the workflow?  If there are Hoffman2 specific requirements are they indicated?
 Yes! Hoffman2 requirements are listed further on. 
@@ -23,6 +23,7 @@ Yup
 
 #### 7. Are the research programs / motivations for the program cited?  Are the dependencies cited?
 Yes
+
 ---
 
 ### The Scripts
