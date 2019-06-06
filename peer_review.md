@@ -31,7 +31,8 @@ Yes
 No, theyre all in the main directory
 
 #### 9. Do these programs generate a run log?
-N/a ? I think Emily said we didnt need them
+N/a ? I think
+
 ---
 
 ### The Vignette
@@ -45,6 +46,7 @@ When i type "bash final_project_bash_script.sh -w /output_directory -a /director
 
 I changed the script name to the one in the directory, (fishbase_bash_script.sh). I then tried the command "bash fishbase_bash_script.sh -w /output_directory -a /directory_with_file/Fish_taxonomy_file.txt"
 I got the message:
+```
 The variable stored in -w is /output_directory
 The variable stored in -a is /directory_with_file/Fish_taxonomy_file.txt
 \n
@@ -53,9 +55,10 @@ The second variable $EST is Species,MaxLengthTL,Troph,seTroph,TrophObserved
 The third variable $PRE is Species,PredatorGroup,PredatorName
 The fourth variable $STO is Species,StockDefsGeneral,IUCN_Code,EnvTemp,Resilience,GenBankID,IUCN_ID
 fishbase_bash_script.sh: line 42: Rscript: command not found
-
+```
 #### 12. Where you able to reproduce the expected output?  If not what was different.
-No I couldnt.
+No I couldnt :(
+
 ---
 
 ### General
