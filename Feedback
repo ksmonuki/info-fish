@@ -1,0 +1,15 @@
+1. The Readme file is the first file displayed on the Github website. The title and name of the author is displayed along with her contact information.
+2. The purpose of the program is clearly stated. Keira designed a program that will take species tables data and match the species with repective trait data.
+3. The program workflow is very straightforward. The program reads a file from an Anacapa output file and extracts unique species. It then uses the R package 'fishbase' to create 
+tables of specific ecological data and finally concatenating the information into one table.
+4. There are dependencies indicated but they are not in the workflow, they have their own section after the workflow. Specific Hoffman requirements are indicated.
+5. There are instructions for running the program. They are a bit complex and it would be useful to indicate which package must be installed first at the beginning of the directions.
+6. The vignette folder has example input and outputs. They are also on the main directory.
+7. The research programs used and dependencies are cited.
+8. There is not a directory that contains all the program scripts other than the main directory.
+9. N/A
+10. There is a directory called vignette that included an example data set and example output.
+11. I was able to run the vignette with the data set; however, it took me a while to understand how the program worked and what each steo meant.
+12. I did reproduce the expected output!
+13. Great Job on creating the program! I would recommend adding a picture for the workflow section. Also the command line in the Readme and vignette are slightly different which 
+was confusing at first.
