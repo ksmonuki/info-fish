@@ -3,13 +3,13 @@ The Readme
 - Yes.
 
 2. Is the purpose of this program clear from the Introduction? What -in your own words- is the motivation behind the program.
-- The program's purpose is to take species with high confidence scores and produce trait data for each species.
+- I think the purpose is clear. The program's purpose is to take species with high confidence scores and produce trait data for each species.
 
 3. Is there a program workflow and is it easy to understand? What -in your own words- is the program workflow?
-- The workflow is easy to understand. The program uses Anacapa's output as input file. It accepts the users arguments for traits and produces a final output table with this information.
+- The workflow is easy to understand because of the arrows. The program uses Anacapa's output as input file. It accepts the users arguments for traits and produces a final output table with this information.
 
 4. Are the dependencies indicated in the workflow? If there are Hoffman2 specific requirements are they indicated?
-- Dependencies section is included. It may be a good idea to add the *install rfishbase* and *install etc* sections to Dependencies.
+- Dependencies section is included. It may be a good idea to add the *install rfishbase* and *install etc* sections to **Dependencies**.
 
 5. Are there instructions for running the program? Do the instructions make sense? What would you do to improve the instructions?
 - Similarly, maybe combine Workflow and Outline sections? Instructions are clear and concise otherwise. 
@@ -31,9 +31,13 @@ The Scripts
 The Vignette
 
 10. Is there a directory called Vignette and does it include a test set, the commands used to run the program and the expected output databases?
-- Yes 
-#working on 11-13
+- Yes the Vignette has everything required.
+
 11. Where you able to run the Vignette using the small test dataset? If not what errors did you get? If so was it easy to run the dataset? Where the instructions clear.
+- The instructions are clear and I think I was able to run it because it produced the "variable stored in xxx" output on 6 lines but it gave me an error at the end - "fishbase_bash_script.sh: line 42: Rscript: command not found"
+
 12. Where you able to reproduce the expected output? If not what was different.
-General
+- Was not able to produce the output file because of the error I wrote above. I did try this multiple times but please check with Emily and the other reviewer because its likely that I made a small mistake I can't catch yet.
+
 13. Give at least two suggestions for ways to improve the GitHub page or the operation of the program.
+- I really like your idea! Your readme is accurate and concise but I think concatenating a couple of the sections will improve clarity for the user. If it's possible- format the results into a table format?
