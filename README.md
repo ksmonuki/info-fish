@@ -139,4 +139,4 @@ R Core Team. 2014. R: A language and environment for statistical computing. R Fo
 
 Taberlet, P., Coissac, E., Hajibabaei, M., Rieseberg, L.H. 2012. *Environmental DNA*. Molecular Ecology. **21**, 1789–1793.
 
-Citing info-fish: doi: 10.5281/zenodo.3246554
+Citing info-fish: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3246554.svg)](https://doi.org/10.5281/zenodo.3246554)
