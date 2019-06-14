@@ -138,3 +138,5 @@ Froese, R. and D. Pauly. Editors. 2019. FishBase. World Wide Web electronic publ
 R Core Team. 2014. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/.
 
 Taberlet, P., Coissac, E., Hajibabaei, M., Rieseberg, L.H. 2012. *Environmental DNA*. Molecular Ecology. **21**, 1789–1793.
+
+Citing info-fish: doi: 10.5281/zenodo.3246554
