@@ -22,21 +22,21 @@ then
 else
   echo ""
 fi
-#
+#prints the variables stored in each flag to verify correct variable assignment
 echo "The variable stored in -w is ${wkdir}"
 
 echo "The variable stored in -a is ${ana}"
 #
-#vars
+#calls the vars file and sets the variables from the file
 #
 source vars.sh
 
 echo "\n"
-
+#prints the variables stored in each variable from the vars file to verify correct variable assignment
 echo "The first variable \$DB is ${DB}"
 echo "The second variable \$EST is ${EST}"
 echo "The third variable \$PRE is ${PRE}"
 echo "The fourth variable \$STO is ${STO}"
 
-
+#calls the R script and specifies the variables to bring into the R script 
 Rscript --vanilla ${DB}R_Script_Fishbase.R ${wkdir} ${ana} ${EST} ${PRE} ${STO}

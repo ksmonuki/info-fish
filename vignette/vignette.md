@@ -8,8 +8,18 @@ Then find the vars.sh file and change the database variable (DB) to the director
 
 To run the program, make sure you are in the directory that contains the bash script.    <br />
 
+If running the program on a cluster such as Hoffman2, first load R into the session   <br />
+
+```{r}
+module load R
+```
+Edit the vars.sh "DB" variable to the directory with the R script.  <br />
+```{bash}
+DB="/Users/keiramonuki/Documents/C177/Project/"
+```
+<br />
 The command line is as follows:    <br />
-bash final_project_bash_script.sh -w /output_directory -a /directory_with_file/Fish_taxonomy_file.txt   <br />
+bash fishbase_bash_script.sh -w /output_directory -a /directory_with_file/Fish_taxonomy_file.txt   <br />
 
 ## Variable verification
 

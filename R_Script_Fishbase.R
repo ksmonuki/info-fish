@@ -7,7 +7,7 @@ library(dplyr)
 library(plyr)
 #call arguments from bash script (both the command line flag variables and vars file variables)
 args <- commandArgs(trailingOnly = TRUE)
-print(args) #
+print(args) #ensures variables are assigned in R correctly
 print(length(args))
 if (length(args) != 5) {
   stop("please make sure there are 5 arguments")
@@ -15,14 +15,14 @@ if (length(args) != 5) {
 #assign variables for use in R script
 wkdir = args[1]
 ana = args[2]
-EST = unlist(strsplit(args[3], ","))
+EST = unlist(strsplit(args[3], ",")) #separates the fields into individual arguments separated by the "" to ensure the argument consists of separated fields instead of one long argument
 PRE = unlist(strsplit(args[4], ","))
 STO = unlist(strsplit(args[5], ","))
 #sets the working directory
 setwd(wkdir)
 #input Anacapa dataset
 input_biom_path <- ana
-#read the .txt file as a tab-delimited table
+#read the .txt file as a table
 ASV.table <- read.table(input_biom_path, header = 1, sep = "\t", fill=TRUE, stringsAsFactors = F)
 #converts the data to a wide format (compatible format for tidyverse)
 ASV.table$X12S_seq_number <- factor(ASV.table$X12S_seq_number)

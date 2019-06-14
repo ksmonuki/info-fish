@@ -5,56 +5,7 @@ eDNA is a unique tool to accurately and rapidly assess marine biodiversity (Tabe
 ## Workflow
 
 The flow of the program is as follows:
-Reads an input file of the Anacapa output -> Extracts the unique species from the amplicon sequence variants (ASVs) -> Use rfishbase to create tables of user-specified relevant ecological information for each unique species -> concatenate all tables into one output table
-
-## Dependencies
-
-*Program dependencies*    <br />
-This program requires R, which can be downloaded [here](https://www.r-project.org/) (R Core Team 2018).  
-
-*File dependencies*    <br />
-This program requires two additional scripts located in the Github:   <br />
-1. vars.sh    <br />
-A variable file that specifies the directory with the R script and the fields to extract from fishbase functions   <br />
-2. R_Script_Final_Project.R   <br />
-Contains the bulk of the code to format the data and extract information from fishbase
-
-## Install rfishbase
-
-``` {r}
-install.packages("rfishbase")
-```
-## Install dplyr, devtools, tidyverse, and plyr
-
-```{r}
-install.packages("dplyr")
-install.packages("plyr")
-install.packages("devtools")
-install.packages("tidyverse")
-```
-*Note*: If running the program on a computing cluster such as UCLA Hoffman2, you must have R loaded in your cluster and download the correct packages. Below are some links that may help:
-
-[The Coatless Professor](https://thecoatlessprofessor.com/programming/working-with-r-on-a-cluster/)
-
-[CECI](https://support.ceci-hpc.be/doc/_contents/Software/R/r_packages.html)
-
-[Anacapa Github link for specifically UCLA Hoffman2 Cluster](https://github.com/limey-bean/Anacapa)   <br />
-
-When running the project on the Hoffman cluster, load R and install packages through the Bash terminal
-
-```{r}
-module load R
-> install.packages("devtools")
-> install.packages("tidyverse")
-> install.packages("dplyr")
-> install.packages("plyr")
-> install.packages("rfishbase") #install this package last because of its dependency on dplyr
-```
-You may be asked to specify CRAN mirror for use during the session. If you are in California, select mirror number 59.
-
-If there is an error "installation of package x had non-zero exit status", then the package was not loaded successfully. If package x is not the package you tried to install (ie. is a dependent package), then install it separately.  <br />
-
-For example, the installing the tidyverse package will give you the message "installation of package "dplyr" had non-zero exit status". The dplyr package should install successfully when installed independently using the command install.packages("dplyr")
+Reads an input file of the Anacapa output -> Extracts the unique species from the amplicon sequence variants (ASVs) -> Use rfishbase to create tables of user-specified relevant ecological information for each unique species -> concatenate all tables into one output table   <br />
 
 ## Project Outline
 
@@ -77,6 +28,60 @@ BASH SCRIPT -working directory argument -input file argument   <br />
   </ol>
 </ol>
 
+## Program and File Dependencies
+
+*Program dependencies*    <br />
+This program requires R, which can be downloaded [here](https://www.r-project.org/) (R Core Team 2018).  
+
+*File dependencies*    <br />
+This program requires two additional scripts located in the Github:   <br />
+1. vars.sh    <br />
+A variable file that specifies the directory with the R script and the fields to extract from fishbase functions   <br />
+2. R_Script_Final_Project.R   <br />
+Contains the bulk of the code to format the data and extract information from fishbase  <br />
+
+## Package Dependencies
+
+#### Install rfishbase
+
+``` {r}
+install.packages("rfishbase")
+```
+#### Install dplyr, devtools, tidyverse, and plyr
+
+```{r}
+install.packages("dplyr")
+install.packages("plyr")
+install.packages("devtools")
+install.packages("tidyverse")
+```
+*Note*: If running the program on a computing cluster such as UCLA Hoffman2, you must have R loaded in your cluster and download the correct packages.   <br />
+
+When running the project on the Hoffman cluster, load R and install packages through the Bash terminal
+
+```{r}
+module load R
+> install.packages("devtools")
+> install.packages("tidyverse")
+> install.packages("dplyr")
+> install.packages("plyr")
+> install.packages("rfishbase") #install this package last because of its dependency on dplyr
+```
+You may be asked to specify CRAN mirror for use during the session. If you are in California, select mirror number 59.
+
+If there is an error "installation of package x had non-zero exit status", then the package was not loaded successfully. If package x is not the package you tried to install (ie. is a dependent package), then install it separately.  <br />
+
+For example, the installing the tidyverse package will give you the message "installation of package "dplyr" had non-zero exit status". The dplyr package should install successfully when installed independently using the command install.packages("dplyr") <br />
+
+Here are some additional links to help:
+
+[The Coatless Professor](https://thecoatlessprofessor.com/programming/working-with-r-on-a-cluster/)
+
+[CECI](https://support.ceci-hpc.be/doc/_contents/Software/R/r_packages.html)
+
+[Anacapa Github link for specifically UCLA Hoffman2 Cluster](https://github.com/limey-bean/Anacapa)   <br />
+
+
 ## Specifying Variables in Vars File
 
 The program allows the user to specify desired trait data to call from FishBase.
@@ -97,10 +102,26 @@ FTWO="species,field_1,field_2,new_field"   <br />
 
 Examples of possible fields for each function are in the fields_list.txt file.
 
+Additionally, if the user wants to change the functions from the default functions (estimate, predators, stock), they will need to go into the R script and change the functions.
+
 ## Running the program
 
+If using a cluster such as Hoffman2, first load R
+
+```{r}
+module load R
+```
+<br />
+
+Edit the vars.sh "DB" variable to the directory with the R script.  <br />
+```{bash}
+DB="/Users/keiramonuki/Documents/C177/Project/"
+```
+<br />
 The command line should look as follows (*note*: The user needs to be in the directory with the bash script):
-bash final_project_bash_script.sh -w ~/working_directory -a ~/anacapa_output_file_.txt  <br />
+bash fishbase_bash_script.sh -w ~/working_directory -a ~/anacapa_output_file_.txt  <br />
+
+*Note*: The user MUST load all the package dependencies before running the program (tidyverse, dplyr, plyr, devtools, rfishbase)
 
 ## Expected Output
 
