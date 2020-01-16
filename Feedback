@@ -1,0 +1,56 @@
+1. Is the Readme file the first document displayed upon lading the Github? Does this Readme page include a title, and the name and contact information for all project members?
+
+The readme file is the first document shown. It does include a title "Info-Fish". Contact info is provided. 
+
+2. Is the purpose of this program clear from the Introduction? What -in your own words- is the motivation behind the program.
+
+The purpose of the program is clear (take an input dataset from anacapa and sort it using the online database FishBase). The motivation is to make data more readable and
+useful.
+
+3. Is there a program workflow and is it easy to understand? What -in your own words- is the program workflow?
+
+The program workflow is fairly straightforward. It involves reading an input file, extracting the relevant data, a unique species table is created for each species, and
+then a final summary table is produced using all of the data tables for each species.
+
+4. Are the dependencies indicated in the workflow? If there are Hoffman2 specific requirements are they indicated?
+
+The dependencies are clearly listed. All Hoffman2 requirements are listed.
+
+5. Are there instructions for running the program? Do the instructions make sense? What would you do to improve the instructions?
+
+The instructions are quite clear, but I think each part of the line of code could be commented along with it for understanding purposes.
+
+6. Is there a section that indicates the files and directories produced by the program?
+
+This goes under the "expected output" category in the Readme file. 
+
+7. Are the research programs / motivations for the program cited? Are the dependencies cited?
+
+All sources and dependencies are cited. Possibly add a motivation for the program.
+
+The Scripts
+8. Is there a directory that contains all of the program scripts?
+
+The scripts are all there, but not within their own specific directory.
+
+The Vignette
+9. Is there a directory called Vignette and does it include a test set, the commands used to run the program and the expected output databases?
+
+Yes, there is a vignette and it tells where to find all of the above to use. It could be a little more organized, though, possibly including the test file within a directory
+also containing the vignette.
+
+10. Where you able to run the Vignette using the small test dataset? If not what errors did you get? If so was it easy to run the dataset? Where the instructions clear.
+
+I was able to run the Vignette; the R packages are always slightly finnicky but I managed to make it work. The instructions were relatively clear, but I had to do a little
+figuring out for some of the steps.
+
+11. Where you able to reproduce the expected output? If not what was different.
+
+The expected output appeared as described.
+
+General
+12. Give at least two suggestions for ways to improve the GitHub page or the operation of the program.
+
+The program itself looks pretty good. I think the GitHub page could use a little more organizational clarity, however. For example, I would recommend
+creating a directory for the vignette and all of the components needed for a test run of the program within that directory. Also, I think pictures
+within the Readme file would be useful for visualizing the process as a whole.
